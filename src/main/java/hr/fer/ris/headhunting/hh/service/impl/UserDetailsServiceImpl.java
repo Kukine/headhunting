@@ -47,7 +47,11 @@ public class UserDetailsServiceImpl implements UserService {
     }
 
     public User register(User user){
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        return this.userRepository.save(user);
+        User newUser = new User();
+        newUser.setName(user.getName());
+        newUser.setSurname(user.getSurname());
+        newUser.setEmail(user.getEmail());
+        newUser.setPassword(passwordEncoder.encode(user.getPassword()));
+        return this.userRepository.save(newUser);
     }
 }
