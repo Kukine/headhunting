@@ -2,13 +2,13 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
     <changeSet id="202003132047" author="Kukine">
-        <insert tableName="user">
+        <insert tableName="users">
             <column name="name">Ana</column>
             <column name="surname">Pribanic</column>
             <column name="email">ana.pribanic@gmail.com</column>
             <column name="password">anabanana</column>
         </insert>
-        <insert tableName="user">
+        <insert tableName="users">
             <column name="name">Luka</column>
             <column name="surname">Kusina</column>
             <column name="email">luka.kusina@gmail.com</column>

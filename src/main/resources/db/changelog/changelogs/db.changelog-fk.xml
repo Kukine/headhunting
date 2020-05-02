@@ -7,7 +7,7 @@
         <addForeignKeyConstraint baseTableName="employee"
                                  baseColumnNames="user_id"
                                  constraintName="fk_employee_user_id"
-                                 referencedTableName="user"
+                                 referencedTableName="users"
                                  referencedColumnNames="id"/>
         <addForeignKeyConstraint baseTableName="experience"
                                  baseColumnNames="skill_id"
@@ -17,7 +17,7 @@
         <addForeignKeyConstraint baseTableName="experience"
                                  baseColumnNames="user_id"
                                  constraintName="fk_experience_user_id"
-                                 referencedTableName="user"
+                                 referencedTableName="users"
                                  referencedColumnNames="id"/>
         <addForeignKeyConstraint baseTableName="employee_organization_map"
                                  baseColumnNames="user_id"
