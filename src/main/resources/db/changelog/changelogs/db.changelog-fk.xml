@@ -1,0 +1,38 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet author="kukine" id="changelog-1.0">
+        <addForeignKeyConstraint baseTableName="employee"
+                                 baseColumnNames="user_id"
+                                 constraintName="fk_employee_user_id"
+                                 referencedTableName="user"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="experience"
+                                 baseColumnNames="skill_id"
+                                 constraintName="fk_experience_skill_id"
+                                 referencedTableName="skill"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="experience"
+                                 baseColumnNames="user_id"
+                                 constraintName="fk_experience_user_id"
+                                 referencedTableName="user"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="employee_organization_map"
+                                 baseColumnNames="user_id"
+                                 constraintName="fk_employee_organization_map_user_id"
+                                 referencedTableName="employee"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="employee_organization_map"
+                                 baseColumnNames="organization_id"
+                                 constraintName="fk_employee_organization_map_organization_id"
+                                 referencedTableName="organization"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="employer"
+                                 baseColumnNames="organization_id"
+                                 constraintName="fk_employer_organization_id"
+                                 referencedTableName="organization"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+</databaseChangeLog>

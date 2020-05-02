@@ -1,0 +1,48 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+    <changeSet id="202003132047" author="Kukine">
+        <insert tableName="user">
+            <column name="name">Ana</column>
+            <column name="surname">Pribanic</column>
+            <column name="email">ana.pribanic@gmail.com</column>
+            <column name="password">anabanana</column>
+        </insert>
+        <insert tableName="user">
+            <column name="name">Luka</column>
+            <column name="surname">Kusina</column>
+            <column name="email">luka.kusina@gmail.com</column>
+            <column name="password">pimpek123</column>
+        </insert>
+        <insert tableName="employee">
+            <column name="user_id">1</column>
+            <column name="description">"ja sam ana ja sam kul"</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Engleski jezik</column>
+            <column name="field_of_expertise">Jezici</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Informacijske znanosti</column>
+            <column name="field_of_expertise">STEM</column>
+        </insert>
+        <insert tableName="experience">
+            <column name="user_id">1</column>
+            <column name="skill_id">1</column>
+            <column name="years">3</column>
+        </insert>
+        <insert tableName="experience">
+            <column name="user_id">1</column>
+            <column name="skill_id">2</column>
+            <column name="years">1</column>
+        </insert>
+        <insert tableName="organization">
+            <column name="name">Dinklbauer d.o.o.</column>
+            <column name="adress">Unska 3</column>
+        </insert>
+        <insert tableName="employee_organization_map">
+            <column name="user_id">1</column>
+            <column name="organization_id">1</column>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
