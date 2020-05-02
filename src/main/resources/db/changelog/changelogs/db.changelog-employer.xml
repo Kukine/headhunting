@@ -11,7 +11,7 @@
             <column name="user_id" type="BIGINT">
                 <constraints nullable="false"/>
             </column>
-            <column name="organization_id" type="VARCHAR(128)">
+            <column name="organization_id" type="BIGINT">
                 <constraints nullable="false"/>
             </column>
         </createTable>
