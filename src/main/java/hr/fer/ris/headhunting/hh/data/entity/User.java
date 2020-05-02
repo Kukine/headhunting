@@ -14,7 +14,8 @@ import java.util.HashMap;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "hilo-strategy")
+    @org.hibernate.annotations.GenericGenerator(name="hilo-strategy", strategy = "hilo")
     @Column(name = "id", insertable = false, updatable = false, nullable = false, unique = true)
     private Long id;
 
