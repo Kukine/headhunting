@@ -6,7 +6,7 @@
     <changeSet author="kukine" id="changelog-1.0">
         <createTable tableName="users">
             <column name="id" type="BIGINT" autoIncrement="true" generationType="ALWAYS">
-                <constraints primaryKey="true"/>
+                <constraints primaryKey="true" nullable="true"/>
             </column>
             <column name="name" type="VARCHAR(128)">
                 <constraints nullable="false"/>
