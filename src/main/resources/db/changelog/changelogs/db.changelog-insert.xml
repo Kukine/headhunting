@@ -101,7 +101,7 @@
             <column name="field_of_expertise">IT</column>
         </insert>
         <insert tableName="skill">
-            <column name="name">Tools & Technologies</column>
+            <column name="name">Tools &amp; Technologies</column>
             <column name="field_of_expertise">IT</column>
         </insert>
         <insert tableName="skill">
