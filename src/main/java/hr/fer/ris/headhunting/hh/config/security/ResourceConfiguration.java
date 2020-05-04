@@ -13,7 +13,8 @@ public class ResourceConfiguration extends ResourceServerConfigurerAdapter {
 
     private static final String[] PUBLIC_ROUTES = {
             "/h2-console/**",
-            "/api/user/register**"
+            "/api/user/register**",
+            "/api/skills**"
     };
 
     @Override
