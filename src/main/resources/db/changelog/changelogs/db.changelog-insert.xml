@@ -44,5 +44,166 @@
             <column name="user_id">1</column>
             <column name="organization_id">1</column>
         </insert>
+        <insert tableName="skill">
+            <column name="name">Software Development</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Java</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Apache Spark</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Design Patterns</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Object Oriented Design</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Data Structures</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Algorithms</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Android Development</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Big Data</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Distributed Systems</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Front-end Development</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Software Documentation</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Scrum</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Object-Oriented Programming (OOP)</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Tools & Technologies</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Scala</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Kotlin</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Python</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">C#</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">C (Programming Language)</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Relational Databases</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">NoSQL</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">PostgreSQL</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">SQL</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Git</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Spring Framework</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">.NET Framework</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Android</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Docker</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Maven</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">JavaScript</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">HTML</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">JSON</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Cascading Style Sheets (CSS)</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">React.js</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Other Skills</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Microservices</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Apache Kafka</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Back-End Web Development</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+        <insert tableName="skill">
+            <column name="name">Spatial Data Management</column>
+            <column name="field_of_expertise">IT</column>
+        </insert>
+
     </changeSet>
 </databaseChangeLog>
