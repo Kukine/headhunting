@@ -1,6 +1,7 @@
 package hr.fer.ris.headhunting.hh.service.impl;
 
 import hr.fer.ris.headhunting.hh.data.entity.Employee;
+import hr.fer.ris.headhunting.hh.data.entity.Experience;
 import hr.fer.ris.headhunting.hh.data.entity.User;
 import hr.fer.ris.headhunting.hh.data.repository.EmployeeRepository;
 import hr.fer.ris.headhunting.hh.data.repository.UserRepository;
@@ -31,6 +32,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         Optional<User> byEmail = this.userRepository.findByEmail(employee.getEmail());
         if(byEmail.isPresent()){
             throw new RuntimeException("User with email already exists");
+        }
+        for(Experience exp: employee.getExperienceList()){
+            exp.setUser(employee);
         }
         return this.employeeRepository.save(employee);
     }
