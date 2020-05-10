@@ -7,6 +7,7 @@ import hr.fer.ris.headhunting.hh.data.repository.EmployeeRepository;
 import hr.fer.ris.headhunting.hh.data.repository.UserRepository;
 import hr.fer.ris.headhunting.hh.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,11 +18,14 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     private EmployeeRepository employeeRepository;
     private UserRepository userRepository;
+    private PasswordEncoder passwordEncoder;
+
 
     @Autowired
-    public EmployeeServiceImpl(EmployeeRepository employeeRepository, UserRepository userRepository){
+    public EmployeeServiceImpl(EmployeeRepository employeeRepository, UserRepository userRepository, PasswordEncoder passwordEncoder){
         this.employeeRepository = employeeRepository;
         this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
     public List<Employee> getEmployees(){
@@ -36,6 +40,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         for(Experience exp: employee.getExperienceList()){
             exp.setUser(employee);
         }
+        employee.setPassword(passwordEncoder.encode(employee.getPassword()));
         return this.employeeRepository.save(employee);
     }
 }
