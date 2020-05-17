@@ -204,6 +204,9 @@
             <column name="name">Spatial Data Management</column>
             <column name="field_of_expertise">IT</column>
         </insert>
+    </changeSet>
+
+    <changeSet id="17052020" author="Kukine">
         <insert tableName="organization">
             <column name="name">FER</column>
             <column name="adress">Unska 3</column>
@@ -216,6 +219,5 @@
             <column name="name">Aktivis</column>
             <column name="adress">Buzinski prilaz 10</column>
         </insert>
-
     </changeSet>
 </databaseChangeLog>
