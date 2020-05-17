@@ -27,4 +27,9 @@ public class EmployeeController {
     public Employee register(@RequestBody Employee employee){
         return employeeService.insert(employee);
     }
+
+    @GetMapping("/bySkill")
+    public List<Employee> getEmployeesBySkill(@RequestParam(name = "skillName") String skillName){
+        return this.employeeService.getEmployeesBySkill(skillName);
+    }
 }

@@ -10,4 +10,6 @@ public interface EmployeeService {
 
     Employee insert(Employee employee);
 
+    List<Employee> getEmployeesBySkill(String skillName);
+
 }
