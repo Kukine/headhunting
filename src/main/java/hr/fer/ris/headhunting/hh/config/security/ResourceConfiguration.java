@@ -16,7 +16,7 @@ public class ResourceConfiguration extends ResourceServerConfigurerAdapter {
             "/api/user/register**",
             "/api/employer/register**",
             "/api/employee/register**",
-	    "/api/organizations**",
+	    "/api/organization**",
             "/api/skills**"
     };
 
