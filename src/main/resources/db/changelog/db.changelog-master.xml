@@ -13,4 +13,5 @@
     <include file="changelogs/db.changelog-skill.xml" relativeToChangelogFile="true"/>
     <include file="changelogs/db.changelog-fk.xml" relativeToChangelogFile="true"/>
     <include file="changelogs/db.changelog-insert.xml" relativeToChangelogFile="true"/>
+    <include file="changelogs/db.changelog-alterTable.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
