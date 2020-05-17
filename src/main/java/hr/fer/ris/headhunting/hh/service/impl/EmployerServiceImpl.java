@@ -5,6 +5,8 @@ import hr.fer.ris.headhunting.hh.data.entity.Organization;
 import hr.fer.ris.headhunting.hh.data.repository.EmployerRepository;
 import hr.fer.ris.headhunting.hh.data.repository.OrganizationRepository;
 import hr.fer.ris.headhunting.hh.service.EmployerService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,10 +17,13 @@ public class EmployerServiceImpl implements EmployerService {
 
     EmployerRepository employerRepository;
     OrganizationRepository organizationRepository;
+    PasswordEncoder passwordEncoder;
 
-    public EmployerServiceImpl(EmployerRepository employerRepository, OrganizationRepository organizationRepository){
+    @Autowired
+    public EmployerServiceImpl(EmployerRepository employerRepository, OrganizationRepository organizationRepository, PasswordEncoder passwordEncoder){
         this.employerRepository = employerRepository;
         this.organizationRepository = organizationRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @Override
@@ -38,6 +43,7 @@ public class EmployerServiceImpl implements EmployerService {
                 employer.setOrganization(save);
             }
         }
+        employer.setPassword(passwordEncoder.encode(employer.getPassword()));
         return this.employerRepository.save(employer);
     }
 }
