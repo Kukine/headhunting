@@ -5,6 +5,7 @@ import hr.fer.ris.headhunting.hh.data.entity.Skill;
 import hr.fer.ris.headhunting.hh.data.repository.ExperienceRepository;
 import hr.fer.ris.headhunting.hh.data.repository.SkillRepository;
 import hr.fer.ris.headhunting.hh.service.ExperienceService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,6 +15,12 @@ public class ExperienceServiceImpl implements ExperienceService {
 
     private ExperienceRepository experienceRepository;
     private SkillRepository skillRepository;
+
+    @Autowired
+    public ExperienceServiceImpl(ExperienceRepository experienceRepository, SkillRepository skillRepository){
+        this.experienceRepository = experienceRepository;
+        this.skillRepository = skillRepository;
+    }
 
     @Override
     public List<Experience> getBySkill(String skillName) {
