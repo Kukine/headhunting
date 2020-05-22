@@ -12,7 +12,7 @@
             <column name="name">Luka</column>
             <column name="surname">Kusina</column>
             <column name="email">luka.kusina@gmail.com</column>
-            <column name="password">pimpek123</column>
+            <column name="password">password123</column>
         </insert>
         <insert tableName="employee">
             <column name="user_id">1</column>
